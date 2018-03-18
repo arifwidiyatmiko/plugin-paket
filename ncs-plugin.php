@@ -8,20 +8,20 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
+ * @link              arifwidiyatmiko.github.io
  * @since             1.0.0
- * @package           Plugin_Name
+ * @package           Ncs_Plugin
  *
  * @wordpress-plugin
- * Plugin Name:       NCS Plugin 
+ * Plugin Name:       NCS Plugin
  * Plugin URI:        https://github.com/arifwidiyatmiko/plugin-paket
- * Description:       Beta Version
+ * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
  * Version:           1.0.0
- * Author:            PT NCS
- * Author URI:        http://www.ptncs.com/
+ * Author:            arif widiyatmiko
+ * Author URI:        arifwidiyatmiko.github.io
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       plugin-name
+ * Text Domain:       ncs-plugin
  * Domain Path:       /languages
  */
 
@@ -39,30 +39,30 @@ define( 'PLUGIN_NAME_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-name-activator.php
+ * This action is documented in includes/class-ncs-plugin-activator.php
  */
-function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
-	Plugin_Name_Activator::activate();
+function activate_ncs_plugin() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ncs-plugin-activator.php';
+	Ncs_Plugin_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-name-deactivator.php
+ * This action is documented in includes/class-ncs-plugin-deactivator.php
  */
-function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
+function deactivate_ncs_plugin() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-ncs-plugin-deactivator.php';
+	Ncs_Plugin_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_activation_hook( __FILE__, 'activate_ncs_plugin' );
+register_deactivation_hook( __FILE__, 'deactivate_ncs_plugin' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-ncs-plugin.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
  *
  * @since    1.0.0
  */
-function run_plugin_name() {
+function run_ncs_plugin() {
 
-	$plugin = new Plugin_Name();
+	$plugin = new Ncs_Plugin();
 	$plugin->run();
 
 }
-run_plugin_name();
+run_ncs_plugin();

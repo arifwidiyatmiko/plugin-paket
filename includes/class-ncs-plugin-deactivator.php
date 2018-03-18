@@ -3,11 +3,11 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       http://example.com
+ * @link       arifwidiyatmiko.github.io
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
+ * @package    Ncs_Plugin
+ * @subpackage Ncs_Plugin/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Plugin_Name
- * @subpackage Plugin_Name/includes
- * @author     Your Name <email@example.com>
+ * @package    Ncs_Plugin
+ * @subpackage Ncs_Plugin/includes
+ * @author     arif widiyatmiko <arifwidiyatmiko@gmail.com>
  */
-class Plugin_Name_Deactivator {
+class Ncs_Plugin_Deactivator {
 
 	/**
 	 * Short Description. (use period)
